@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: m;
+    src: url(./font/MargarethRosinante-Regular.otf);
+}
+
 body{
     overflow-x: hidden;
+    font-family: m;
 }
 
 section{
@@ -15,12 +21,12 @@ section{
 }
 
 .section-1{
-    background-color: antiquewhite;
+    display: flex;
 }
 
 .section-2{
-    background-color: aqua;
-    font-size: 100px;
+    /* background-color: aqua;
+    font-size: 100px; */
 }
 
 .main-wrapper{
@@ -31,4 +37,47 @@ section{
     background-color: black;
     margin-top: -100vh;
     position: relative;
+}
+
+.box1{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name{
+    font-size: 150px;
+}
+
+.box2{
+    width: 35%;
+}
+
+.image-gallery{
+    display: flex;
+    height: 100vh;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    min-height: 300px;
+    height: auto;
+    width: 200px;
+    object-fit: cover;
+    background-color: black;
+}
+
+.col-1 img, .col-3 img{
+    padding: 0.2rem 0.5rem;
+}
+
+.col-2 img{
+    padding: 0.2rem 0;
 }
