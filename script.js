@@ -1,4 +1,5 @@
 let container = document.querySelector('.main-wrapper')
+let section = container.querySelectorAll('.section')
 
 let tl = gsap.timeline({
     scrollTrigger:{
@@ -6,7 +7,7 @@ let tl = gsap.timeline({
         scrub: 1,
         pin: true,
         start: "top top",
-        end: "+=1000"
+        end: "+=3300"
     },
 })
 .to(container , {
@@ -15,3 +16,4 @@ let tl = gsap.timeline({
     ease:"none",
     duration:1
 })
+.to({}, {duration:1 / (section.length+1)})

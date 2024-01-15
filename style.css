@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 section{
     height: 100vh;
     width: 100vw;
@@ -16,8 +20,15 @@ section{
 
 .section-2{
     background-color: aqua;
+    font-size: 100px;
 }
 
 .main-wrapper{
     display: flex;
+}
+
+.section-3{
+    background-color: black;
+    margin-top: -100vh;
+    position: relative;
 }
